@@ -1,0 +1,26 @@
+{
+  "name": "AutoClick Antigravity V5.0",
+  "version": "5.0.0",
+  "description": "Centro de comando premium de monitoramento visual para automação de IDE com protocolos de conformidade de segurança. SPA React com animações Framer Motion e navegação HashRouter.",
+  "author": "Antigravity Systems",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "features": [
+    "Dashboard com monitor visual em tempo real",
+    "Biblioteca de Alvos com CRUD completo",
+    "Padrões de automação exportáveis",
+    "Configurações persistentes",
+    "Sidebar colapsável com glassmorphism",
+    "Animações de elite com Framer Motion",
+    "Trava de segurança automática"
+  ],
+  "techStack": {
+    "framework": "React 19",
+    "router": "React Router DOM (HashRouter)",
+    "animations": "Framer Motion",
+    "styling": "Tailwind CSS",
+    "bundler": "Vite",
+    "language": "TypeScript"
+  }
+}
