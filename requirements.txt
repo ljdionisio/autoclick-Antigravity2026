@@ -1,0 +1,7 @@
+# Dependências para AutoClick Antigravity V5.0
+# Instale com: pip install -r requirements.txt
+
+pyautogui>=0.9.54
+opencv-python>=4.8.0
+keyboard>=0.13.5
+Pillow>=10.0.0

@@ -1,20 +1,97 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🖱️ AutoClick Antigravity V5.0
 
-# Run and deploy your AI Studio app
+**Clique automático para botões Accept/Continue/Confirm no Cursor IDE e Antigravity.**
 
-This contains everything you need to run your app locally.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-View your app in AI Studio: https://ai.studio/apps/drive/14G7lmZoqTBSIgNEQBkw9dODDXzdsntPC
+---
 
-## Run Locally
+## 🚀 Como Usar
 
-**Prerequisites:**  Node.js
+### Opção 1: Executar Diretamente (Recomendado)
+```bash
+# Duplo clique no arquivo:
+START_AUTOCLICK.bat
+```
 
+### Opção 2: Linha de Comando
+```bash
+# Instalar dependências
+pip install -r requirements.txt
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# Executar
+python autoclick.py
+```
+
+---
+
+## ⌨️ Controles
+
+| Tecla | Ação |
+|-------|------|
+| **F9** | Ativar/Desativar AutoClick |
+| **F10** | Sair do programa |
+
+---
+
+## 📸 Botões Detectados
+
+O AutoClick detecta automaticamente os seguintes botões na tela:
+
+- ✅ `Accept All` - Aceitar todas as alterações
+- ✅ `Accept Alt` - Aceitar alternativa
+- ✅ `Accept Changes` - Aceitar mudanças
+- ✅ `Confirm` - Confirmar ação
+
+> As imagens estão na pasta `Botoes do Antigravity ACCEPT ALL/`
+
+---
+
+## ⚙️ Configurações
+
+Edite o arquivo `autoclick.py` para ajustar:
+
+```python
+SCAN_INTERVAL = 0.3  # Segundos entre cada scan (menor = mais rápido)
+CONFIDENCE = 0.8     # Confiança mínima para match (0.0 a 1.0)
+CLICK_DELAY = 0.1    # Delay após clicar
+```
+
+---
+
+## 📋 Requisitos
+
+- Python 3.10 ou superior
+- Windows 10/11
+- Bibliotecas: pyautogui, opencv-python, keyboard, Pillow
+
+---
+
+## 🛠️ Estrutura do Projeto
+
+```
+PROJETO AUTO-CLICK ANTIGRAVITY/
+├── autoclick.py              # Script principal
+├── requirements.txt          # Dependências Python
+├── START_AUTOCLICK.bat       # Inicializador Windows
+├── Botoes do Antigravity ACCEPT ALL/
+│   ├── Accept All.png
+│   ├── Accept Alt.png
+│   ├── Accept Changes Ctrl.png
+│   └── Confirm.png
+└── README.md
+```
+
+---
+
+## ⚠️ Aviso
+
+Este software automatiza cliques na tela. Use com responsabilidade.
+O AutoClick só funciona enquanto estiver em execução no terminal.
+
+---
+
+## 📄 Licença
+
+MIT License - Use livremente!
